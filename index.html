@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello Kitty Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="download.png" alt="Hello Kitty" class="kitty-icon">
+            <h1>Hello Kitty Shop</h1>
+        </div>
+        <form id="inputForm">
+            <label for="namaProduk">Nama Produk:</label>
+            <input type="text" id="namaProduk" placeholder="Nama Produk" required>
+            <label for="hargaSatuan">Harga Satuan:</label>
+            <input type="number" id="hargaSatuan" placeholder="Harga Satuan" required>
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" placeholder="jumlah" required>
+            <button type="submit">Tambah ✨</button>
+        </form>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Jml</th>
+                    <th>jmlHarga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditambahkan di sini -->
+            </tbody>
+        </table>
+        <div class="total" id="totalHarga">Total Pembayaran: Rp 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

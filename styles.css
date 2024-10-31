@@ -1,0 +1,121 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 20px;
+    background-image: url('hello-kitty-pattern.png');
+    background-size: 100px;
+    background-attachment: 0.1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.kitty-icon {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    color: #ff66a3;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+label {
+    color: #ff66a3;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff66a3;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4d94;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ffb6c1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff66a3;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #fff0f5;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: right;
+    color: #ff66a3;
+    padding: 10px;
+    border-top: 2px solid #ffb6c1;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+tr {
+    animation: fadeIn 0.3s ease-out;
+}
